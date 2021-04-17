@@ -1,5 +1,5 @@
 var last_position_of_x, last_position_of_y;
-
+var current_position_of_touch_x, current_position_of_touch_y;
     canvas = document.getElementById('myCanvas');
     ctx = canvas.getContext("2d");
     
@@ -44,9 +44,10 @@ if (width<992) {
         console.log("x  = " + current_position_of_touch_x + "y = " + current_position_of_touch_y);
         ctx.lineTo(current_position_of_touch_x, current_position_of_touch_y);
         ctx.stroke();
-        }
+        
 
         last_position_of_x = current_position_of_touch_x; 
         last_position_of_y = current_position_of_touch_y;
+    }
     
 
